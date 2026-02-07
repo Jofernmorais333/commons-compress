@@ -126,7 +126,7 @@ Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.
     <dependency>
       <groupId>org.tukaani</groupId>
       <artifactId>xz</artifactId>
-      <version>1.10</version>
+      <version>1.11</version>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -390,7 +390,7 @@ Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.
             <phase>process-test-resources</phase>
             <configuration>
               <target>
-                <untar src="${basedir}/src/test/resources/zstd-tests.tar" dest="${project.build.testOutputDirectory}" />
+                <untar src="${basedir}/src/test/resources/zstd-tests.tar" dest="${project.build.testOutputDirectory}"/>
               </target>
             </configuration>
             <goals>
@@ -458,7 +458,7 @@ Brotli, Zstandard and ar, cpio, jar, tar, zip, dump, 7z, arj.
                 <phase>process-test-resources</phase>
                 <configuration>
                   <target>
-                    <untar src="${basedir}/src/test/resources/zip64support.tar.bz2" dest="${project.build.testOutputDirectory}" compression="bzip2" />
+                    <untar src="${basedir}/src/test/resources/zip64support.tar.bz2" dest="${project.build.testOutputDirectory}" compression="bzip2"/>
                   </target>
                 </configuration>
                 <goals>
